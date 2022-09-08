@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="./resources/style.css">
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+    <br>
+    <h2>Types of Selectors</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Target</th>
+                <th>Description</th>
+                <th>Syntax</th>
+                <th>Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Type</td>
+                <td>Elements of certain Type</td>
+                <td>Will target all elements of a certain type </td>
+                <td>Name of the type followed by curly brackets ({})</td>
+                <td>h1{}</td>
+            </tr>
+            <tr>
+                <td>Class</td>
+                <td>Defined Class</td>
+                <td>Will target all elements identified with the given class</td>
+                <td>Is called by a dot (.) before the name of the class</td>
+                <td class="example">.example{}</td>
+            </tr>
+            <tr>
+                <td>ID</td>
+                <td>Unique ID</td>
+                <td>Will target the element identified with the unique ID called</td>
+                <td>Is called by a hashtag (#) before the name of the ID</td>
+                <td class="example">#example{}</td>
+            </tr>
+            <tr>
+                <td>Groups</td>
+                <td>All elements within selectors list</td>
+                <td>Will select different element and apply the same rules to them</td>
+                <td>Is called by declaring different elements separated by a comma (,)</td>
+                <td class="example">h1, h2{}</td>
+            </tr>
+            <tr>
+                <td>Chain</td>
+                <td>Elements that meet all defined criteria</td>
+                <td>Will target an element if and only it meets ALL the criteria defined by the selectors </td>
+                <td>One element followes by another without blank space</td>
+                <td class="example">h1.example{}</td>
+
+            </tr>
+            <tr>
+                <td>All</td>
+                <td>All elements</td>
+                <td>Will target all elements of a file</td>
+                <td>An asterisk followed by curly brackets</td>
+                <td class="example">*{}</td>
+            </tr>
+            <tr>
+                
+                <td>Descendant</td>
+                <td>Elements descendants to other elements</td>
+                <td>Targets an element within another one that is it's parent</td>
+                <td>Parent element follow by its children separated by a single space</td>
+                <td class="example">div p{} </td>
+                
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <h2>Important Concepts</h2>
+    <table>
+        <thead>
+            <th>Concept</th>
+            <th>Details</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML attributes with multiple values</td>
+                <td>Some HTML attributes can have multiple 
+                    attribute values. Multiple attribute values are separated by 
+                    a space between each attribute.</td>
+            </tr>
+            <tr>
+                <td>Selector Specificity</td>
+                <td>Specificity is a ranking system that is used when there are multiple 
+                    conflicting property values that point to the same element. 
+                    When determining which rule to apply, the selector with the highest 
+                    specificity wins out. The most specific selector type is the ID selector, 
+                    followed by class selectors, followed by type selectors.</td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+
+    
+</body>
+</html>
